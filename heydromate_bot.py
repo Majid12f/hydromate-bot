@@ -16,9 +16,9 @@ from telegram.ext import (
 )
 
 # ------------------- تنظیمات -------------------
-TOKEN = "7541884480:AAEnbBsrYVQPfdPicYV9szJLqo43ajB-oic"
-CHANNEL_ID = -1002703710685
-CHANNEL_USERNAME = "@heroinroutine"
+TOKEN = os.environ.get("TOKEN")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
+CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME")
 MAIN_ADMIN_ID = 206362948  # آی‌دی عددی خودت
 
 DATA_FILE = "data.json"
